@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+# Template for Micro Frontends with Module Federation
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository template leverages the module federation paradigm to facilitate efficient code sharing across micro frontends. It uses Webpack as the bundler, TypeScript for type safety, Babel for JavaScript transpilation, and Tailwind CSS for styling. Designed to streamline the setup process, this template accelerates the creation of new repositories for micro frontend applications.
 
-## Available Scripts
+## Creating a New Micro-Frontend
 
-In the project directory, you can run:
+Run the following command in your terminal, replacing name_of_new_project with your desired project name:
 
-### `yarn start`
+`npx degit git@github.com:jigjoy-io/module-federation-template.git#main name_of_new_project`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Running Instructions 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+To run a new micro-frontend project follow these steps:
 
-### `yarn test`
+### Navigate to the Project Directory
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Change into your new project directory:
 
-### `yarn build`
+`cd name_of_new_project`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Install Dependencies
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Install the required dependencies by running:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+`yarn install`
 
-### `yarn eject`
+### Run the Development Server
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Start the development server with:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+`yarn start`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Your new micro-frontend project is now set up and running. You can start developing your application using Webpack, TypeScript, Babel, and Tailwind CSS.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Build the Project
 
-## Learn More
+To build the project, run:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+`yarn build`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This will create a `dist` folder where the built files will be regenerated each time you run this command.
