@@ -55,7 +55,7 @@ function getHtmlPlugins(chunks) {
     return chunks.map(
         (chunk) =>
             new HTMLPlugin({
-                title: "The platform to build modern educational apps",
+                title: "React, Webpack 5, Typescript, Babel, Tailwind start template",
                 filename: `${chunk}.html`,
                 chunks: [chunk],
             })
