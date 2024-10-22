@@ -39,3 +39,19 @@ To build the project, run:
 `yarn build`
 
 This will create a `dist` folder where the built files will be regenerated each time you run this command.
+
+## Tanstack
+
+This template includes **TanStack Router** for handling routing efficiently and type-safely. It provides flexibility and performance improvements with modern routing features.
+
+- Default 404 Page: A built-in *NotFoundRoute* component handles unknown routes, ensuring users see a friendly "404 - Not Found" message when navigating to non-existent pages.
+
+- Code Splitting with `createLazyFileRoute`: We optimize your app's performance by splitting code at the route level. This means only the code required for a specific route is loaded, reducing initial load times and improving overall app speed.
+
+- Route Generation: With the command `yarn generate-routes`, you can automatically generate route definitions based on your files, simplifying the process of adding new routes to your application.
+
+## Tailwind
+
+This template includes **TailwindCSS**, a utility-first CSS framework that helps you build clean and responsive user interfaces effortlessly.
+
+Tailwind offers a utility-first approach to styling, making it easy to build responsive and modern user interfaces quickly. By using low-level utility classes, Tailwind reduces the need for custom CSS and helps maintain consistency across your project. This approach allows you to create complex designs directly within your HTML, resulting in faster development and more maintainable code.

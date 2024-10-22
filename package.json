@@ -6,9 +6,11 @@
     "build": "webpack --mode production",
     "build:dev": "webpack --mode development",
     "start": "webpack-dev-server --open --mode development",
-    "start:live": "webpack-dev-server --open --mode development --liveReload"
+    "start:live": "webpack-dev-server --open --mode development --liveReload",
+    "generate-routes": "tsr generate"
   },
   "dependencies": {
+    "@tanstack/react-router": "^1.75.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
@@ -17,6 +19,9 @@
     "@babel/preset-env": "^7.24.5",
     "@babel/preset-react": "^7.24.1",
     "@babel/preset-typescript": "^7.24.1",
+    "@tanstack/router-cli": "^1.74.2",
+    "@tanstack/router-devtools": "^1.75.0",
+    "@tanstack/router-plugin": "^1.76.0",
     "@types/node": "^20.12.12",
     "@types/react": "^18.3.2",
     "@types/react-dom": "^18.3.0",
