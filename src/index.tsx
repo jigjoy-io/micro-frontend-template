@@ -1,6 +1,7 @@
 import React from "react"
 import ReactDOM from "react-dom/client"
 import "./index.css"
+import App from "./App"
 
 const root = document.createElement("div")
 document.body.appendChild(root)
@@ -8,6 +9,6 @@ const rootDiv = ReactDOM.createRoot(root)
 
 rootDiv.render(
 	<React.StrictMode>
-		<h1>Hello, world!</h1>
+		<App />
 	</React.StrictMode>
 )

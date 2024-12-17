@@ -53,9 +53,16 @@ module.exports = {
 		}),
 		new rspack.HtmlRspackPlugin({
 			template: "public/index.html",
-			title: "JigJoy - Playground for Your Followers",
+			title: "Text-to-play engine that transforms imagination into playful apps.",
 			filename: "index.html",
 			chunks: ["main"],
+		}),
+		new rspack.container.ModuleFederationPlugin({
+			name: "micro-frontend",
+			filename: "remoteEntry.js",
+			remotes: {},
+			exposes: {},
+			shared: {},
 		}),
 	],
 	resolve: {
