@@ -5,7 +5,6 @@
 	"scripts": {
 		"start": "rspack serve --config rspack.config.js",
 		"build": "rspack --config rspack.config.js",
-		"generate-routes": "tsr generate",
 		"format": "prettier --write \"src/**/*.{ts,tsx}\""
 	},
 	"dependencies": {
