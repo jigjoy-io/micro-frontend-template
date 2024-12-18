@@ -2,10 +2,10 @@ const path = require("path")
 const rspack = require("@rspack/core")
 const Dotenv = require("dotenv-webpack")
 
-const deps = require("./package.json").dependencies
+const deps = require("../package.json").dependencies
 module.exports = {
 	entry: {
-		main: path.join(__dirname, "./src/index.tsx"),
+		main: path.join(__dirname, "../src/index.tsx"),
 	},
 	output: {
 		publicPath: "auto",
@@ -63,17 +63,17 @@ module.exports = {
 			filename: "remoteEntry.js",
 			remotes: {},
 			exposes: {},
-			shared: {        
+			shared: {
 				...deps,
 				react: {
-				  singleton: true,
-				  requiredVersion: deps.react,
-				  eager:true
+					singleton: true,
+					requiredVersion: deps.react,
+					eager: true,
 				},
 				"react-dom": {
-				  singleton: true,
-				  requiredVersion: deps["react-dom"],
-				  eager:true
+					singleton: true,
+					requiredVersion: deps["react-dom"],
+					eager: true,
 				},
 			},
 		}),
